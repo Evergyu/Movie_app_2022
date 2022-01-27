@@ -1,30 +1,24 @@
 import React from 'react';
+import axios from 'axios';
 
-function Food(props){
-  return (
-    <div>
-      <h1>I love {props.name} </h1>
-      <img src={props.image} alt={props.name}/>
+class App extends React.component {
+  state = {
+    isLoading: true,
+    movies: [],
+  };
+  componentDidMount() {
+    axios.get('https://yts-proxy.now.sh/list_movies.json');
+  }
+  render() {
+    const { isLoading } = this.state;
+    return (<div>
+      <h1>hhhhhhhhhhhh</h1>
+      {isLoading ? 'Loading...' : 'We are ready'}
       </div>
-  ) 
+      );
+    }
 }
 
-const foodIlike=[
-  {name : 'kimchi', image:'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.K38fMEczTi_WllQaQXvDgAHaGp%26pid%3DApi&f=1'},
-  {name : 'ddeok-bbok-i', image:'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.kMNtwT_3Sp-W-yqYfPcRRAHaHa%26pid%3DApi&f=1'}
-
-] 
-
-function renderfood(dish){
-  return (<Food name={dish.name} image={dish.image}/>)
-}
-
-function App() {
-  return (
-    <div>
-      {foodIlike.map(renderfood)}
-    </div>
-  );
-}
 
 export default App;
+
