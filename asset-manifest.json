@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Evergyu/Movie_app_2022/static/css/main.2eb397c8.css",
-    "main.js": "/Evergyu/Movie_app_2022/static/js/main.d62778a3.js",
-    "index.html": "/Evergyu/Movie_app_2022/index.html",
-    "main.2eb397c8.css.map": "/Evergyu/Movie_app_2022/static/css/main.2eb397c8.css.map",
-    "main.d62778a3.js.map": "/Evergyu/Movie_app_2022/static/js/main.d62778a3.js.map"
+    "main.css": "/Movie_app_2022/static/css/main.2eb397c8.css",
+    "main.js": "/Movie_app_2022/static/js/main.d62778a3.js",
+    "index.html": "/Movie_app_2022/index.html",
+    "main.2eb397c8.css.map": "/Movie_app_2022/static/css/main.2eb397c8.css.map",
+    "main.d62778a3.js.map": "/Movie_app_2022/static/js/main.d62778a3.js.map"
   },
   "entrypoints": [
     "static/css/main.2eb397c8.css",
